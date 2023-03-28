@@ -5,12 +5,14 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'recipes/home.html')
+    return render(request, 'recipes/home.html', context={
+        'name': 'George Silva'
+    })
 # esta pasta recipes dentro de templates e usada para dar um nome especifico ao arquivo home para o django não confundir com outro.
 
 
 def contato(request):
-    return HttpResponse('contato')
+    return render(request, 'apagar/temp.html')
 
 
 def sobre(request):
