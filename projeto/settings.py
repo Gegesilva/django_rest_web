@@ -127,6 +127,11 @@ STATICFILES_DIRS = [
     BASE_DIR / 'BASE_STATIC',
 ]
 
+
+STATIC_ROOT = BASE_DIR / 'static'
+# criando uma pasta padrão onde serão salvos os arquivos estaticos após o comando
+# (python manage.py collectstatic)
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
